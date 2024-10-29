@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>clamp calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <script src="js/popup.js"></script>
+  </head>
+
+  <body>
+    <h1 class="title">clamp Calculator</h1>
+    <div class="contents">
+      <p class="contents__name">Values(px)</p>
+      <div class="formWrap">
+        <div class="formItem">
+          <label class="label-name" for="fz_min">MIN</label>
+          <input type="number" id="fz_min" class="js_input input fz_min" value="14" />
+        </div>
+        <div class="formItem">
+          <label class="label-name" for="fz_max">MAX</label>
+          <input type="number" id="fz_max" class="js_input input fz_max" value="20" />
+        </div>
+      </div>
+    </div>
+
+    <div class="contents">
+      <p class="contents__name">Viewport(px)</p>
+      <div class="formWrap">
+        <div class="formItem">
+          <label class="label-name" for="vp_min">MIN</label>
+          <input type="number" id="vp_min" class="js_input input vp_min" value="769" />
+        </div>
+        <div class="formItem">
+          <label class="label-name" for="vp_max">MAX</label>
+          <input type="number" id="vp_max" class="js_input input vp_max" value="1500" />
+        </div>
+      </div>
+    </div>
+
+    <div class="contents">
+      <p class="contents__name">Root Font Size(px)</p>
+      <input type="number" class="js_input input rem" value="16" />
+    </div>
+
+    <!-- <div class="btnWrap">
+    <button id="js_calc-btn" type="button" class="calc-btn">Calculate</button>
+    <button id="js_reset-btn" type="button" class="reset-btn">初期化</button>
+</div> -->
+
+    <div class="contents resultArea">
+      <p class="contents__name result__name">Result</p>
+      <input type="text" id="js_result" class="result" readonly />
+      <button type="button" id="js_copyBtn" class="copyBtn"><span class="txt">Copy!</span></button>
+    </div>
+  </body>
+</html>

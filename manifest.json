@@ -1,0 +1,13 @@
+{
+  "name": "clamp calculator",
+  "description": "各値を入力してclamp式を生成できます。",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+		"128": "img/icon.png"
+	},
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
